@@ -147,7 +147,7 @@ app.post(
 									}
 									console.log(r.chat);
 									if (r) {
-										doLogicOnChat(r, new Date());
+										doLogicOnChat(r, new Date(), true);
 									}
 								}
 							}

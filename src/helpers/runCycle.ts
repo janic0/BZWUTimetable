@@ -4,7 +4,7 @@ import doLogicOnChat from "./doLogicOnChat";
 const runCycle = (now: Date) => {
 	db.chat.findMany().then((chats) => {
 		chats.forEach((chat) => {
-			doLogicOnChat(chat, now);
+			doLogicOnChat(chat, now, false);
 		});
 	});
 };
