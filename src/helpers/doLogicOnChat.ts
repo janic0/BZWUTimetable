@@ -4,7 +4,7 @@ import getNextLesson from "../interactions/getNextLesson";
 import sendMessages from "./sendInfos";
 import data from "../davinci-data"
 import findSpecificLesson from "../interactions/findSpecificLesson";
-import sendMessage from "src/telegram/sendMessage";
+import sendMessage from "../telegram/sendMessage";
 
 const doLogicOnChat = (chat: Chat, now: Date, customCalled: boolean) => {
 	let useOverWriteArray = false;
