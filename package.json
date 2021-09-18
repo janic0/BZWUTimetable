@@ -1,0 +1,17 @@
+{
+  "name": "schedule",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^2.29.1",
+    "@types/node": "^16.6.2",
+    "axios": "^0.21.1",
+    "fastify": "^3.20.2",
+    "prisma": "^2.29.1",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "start": "npx prisma migrate deploy && npx prisma generate && npm install && tsc && node dist/index.js"
+  }
+}
