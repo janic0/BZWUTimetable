@@ -13,12 +13,12 @@ sendMessage(647283658, "hello world");
 const app = fastify();
 
 
-app.get("/ping", (_, res) => {
+app.get("/ping", (_, res) => {	
 	res.send("pong");
 });
 
 app.post(
-	"/sdoikfjasdiofhasdf8934inhrfuodhsfijkbasu438hbubau3yG2781",
+	"/" + process.env.URL,
 	(req, res) => {
 		res.send()
 		if (req.body) {
