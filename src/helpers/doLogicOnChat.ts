@@ -137,7 +137,7 @@ const doLogicOnChat = (chat: Chat, now: Date, customCalled: boolean) => {
 							).toString() +
 							" minutes"
 					);
-				} else {
+				} else if (customCalled) {
           sendMessage(chat.chat, "no classes, enjoy your free-time")
         }
 				if (chat.classes.length - 1 === classIndex) {
