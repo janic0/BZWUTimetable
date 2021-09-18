@@ -4,7 +4,6 @@ import getNextLesson from "../interactions/getNextLesson";
 import sendMessages from "./sendInfos";
 import data from "../davinci-data"
 import findSpecificLesson from "../interactions/findSpecificLesson";
-import sendMessage from "../telegram/sendMessage";
 
 const doLogicOnChat = (chat: Chat, now: Date, customCalled: boolean) => {
 	let useOverWriteArray = false;
@@ -138,7 +137,7 @@ const doLogicOnChat = (chat: Chat, now: Date, customCalled: boolean) => {
 							" minutes"
 					);
 				} else if (customCalled) {
-          sendMessage(chat.chat, "no classes, enjoy your free-time")
+          add("no classes, enjoy your free-time")
         }
 				if (chat.classes.length - 1 === classIndex) {
 					sendMessages(chat, overWriteInfos, useOverWriteArray, c, infos)
