@@ -5,6 +5,7 @@ import doLogicOnChat from "./helpers/doLogicOnChat";
 import db from "./db"
 import getChat from "./helpers/getOrCreateChat";
 import data from "./davinci-data"
+import "./listener"
 
 
 sendMessage(647283658, "hello world");
