@@ -1,5 +1,5 @@
 WAIT=20    
 TIMEOUT=10 
-ATTEMPTS=10
+ATTEMPTS=4
 
 /ping pong
