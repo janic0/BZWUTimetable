@@ -116,7 +116,7 @@ const doLogicOnChat = (chat: Chat, now: Date, customCalled: boolean) => {
 								" minutes"
 						);
 						if (sportLesson.found) {
-							add("You have sport today");
+							add("you have sport today");
 						}
 					} else if (!currentLesson && nextLesson && now.getHours() + 2 > 7) {
 						add((data.subjects as any)[nextLesson.subjectCode]);
