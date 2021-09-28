@@ -140,7 +140,7 @@ const doLogicOnChat = (chat: Chat, now: Date, customCalled: boolean) => {
 								).toString() +
 								" minutes"
 						);
-					} else if (customCalled && !currentIsOverwritingClass) {
+					} else if (customCalled) {
 						add("no classes, enjoy your free-time");
 					}
 					if (chat.classes.length - 1 === classIndex) {
