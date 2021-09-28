@@ -1,4 +1,4 @@
-import db from "../db"
+import db from "../db";
 import doLogicOnChat from "./doLogicOnChat";
 
 const runCycle = (now: Date) => {
@@ -9,4 +9,4 @@ const runCycle = (now: Date) => {
 	});
 };
 
-export default runCycle
+export default runCycle;

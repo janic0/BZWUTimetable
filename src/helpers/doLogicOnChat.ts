@@ -5,7 +5,7 @@ import sendMessages from "./sendInfos";
 import data from "../davinci-data";
 import findSpecificLesson from "../interactions/findSpecificLesson";
 
-const doLogicOnChat = (chat: Chat, now: Date, customCalled: boolean) => {
+const doLogicOnChat = (chat: Chat, now: Date, custom: boolean) => {
 	let useOverWriteArray = false;
 	const infos: string[] = [];
 	const overWriteInfos: string[] = [];
@@ -65,7 +65,7 @@ const doLogicOnChat = (chat: Chat, now: Date, customCalled: boolean) => {
 									")"
 							);
 						} else {
-							if (sportLesson) {
+							if (sportLesson.found) {
 								add("Don't forget to take your turnsack home");
 							}
 							add(
@@ -140,11 +140,16 @@ const doLogicOnChat = (chat: Chat, now: Date, customCalled: boolean) => {
 								).toString() +
 								" minutes"
 						);
-					} else if (customCalled) {
-						add("no classes, enjoy your free-time");
 					}
 					if (chat.classes.length - 1 === classIndex) {
-						sendMessages(chat, overWriteInfos, useOverWriteArray, c, infos);
+						sendMessages(
+							chat,
+							overWriteInfos,
+							useOverWriteArray,
+							c,
+							infos,
+							custom
+						);
 					}
 				});
 			});
