@@ -10,6 +10,7 @@ const sendMessages = (
 	custom: boolean
 ) => {
 	let master = "";
+	console.log(infos, useOverWriteArray, overWriteInfos);
 	if (useOverWriteArray && overWriteInfos.length) {
 		overWriteInfos.forEach((v, idx) => {
 			if (chat.classes.length > 1 && !chat.classes.includes("BMTL21a")) {
